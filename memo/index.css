@@ -1,0 +1,68 @@
+body{
+  background-color: rgb(255, 249, 241);
+}
+
+.saveBtn{
+  background-color: rgb(131, 249, 131);
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+}
+
+.clearBtn{
+  background-color: rgb(255, 81, 81);
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+}
+
+.saveBtn:hover{
+  opacity: 0.6;
+}
+
+.clearBtn:hover{
+  opacity: 0.6;
+}
+
+.input{
+  width: 300px;
+  height: 80px;
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 10px;
+}
+
+
+.button-group{
+  margin-top: 30px;
+}
+
+#inputArea{
+  width: 50%;
+  /* background-color: aquamarine; */
+  text-align: center;
+  position: fixed; 
+  top: 0; /* 上部に固定 */
+  left: 650px;
+}
+
+#outputArea{
+  width: 50%;
+  /* background-color: rgb(181, 255, 139); */
+  text-align: center;
+}
+
+#container{
+  display: flex;
+}
+
+#memoList li {
+  text-align: left; /* テキストを左に揃える */
+  padding: 5px 10px; /* リストアイテムに少し余白を追加 */
+  /* border-bottom: 1.5px solid #acacac;  */
+  margin-bottom: 50px;
+}
+
+.delBtnStyle{
+  top: 0px;
+  background-color: rgb(255, 102, 115);
+}
