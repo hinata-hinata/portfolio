@@ -1,5 +1,6 @@
 import tkinter as tk
 import add_spell
+import game_start
 
 class Application(tk.Frame):
   def __init__(self, master):
@@ -14,7 +15,7 @@ class Application(tk.Frame):
 
 
   def create_widgets(self):
-    self.button_start = tk.Button(self, text='スタート', font=('', 20))
+    self.button_start = tk.Button(self, text='スタート', font=('', 20), command=self.start_event)
     self.button_start.place(x=150, y=90)
 
     self.button_add = tk.Button(self, text='単語の追加', font=('', 20), command=self.add_event)
@@ -24,6 +25,11 @@ class Application(tk.Frame):
   def add_event(self):
     self.destroy()
     add_spell.Add(self.master)
+    
+  def start_event(self):
+    self.destroy()
+    game_start.Start(self.master)
+    
 
 if __name__ == '__main__':
   root = tk.Tk()
